@@ -9,7 +9,7 @@ import { ToastContainer} from 'react-toastify';
 
 const App = () => {
 
-  const url = "http://localhost:4000"
+  const url = "https://food-delivery-backend-7ou6.onrender.com"
 
   return (
     <div>
