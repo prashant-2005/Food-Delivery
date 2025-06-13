@@ -15,7 +15,7 @@ const port = process.env.PORT || 4000
 //middleware
 app.use(express.json())
 app.use(cors({
-  origin: ['https://food-delivery-admin-blond.vercel.app','https://food-delivery-three-alpha-47.vercel.app'], // React frontend ka port
+  origin: ['http://localhost:5173', 'https://food-delivery-admin-blond.vercel.app','https://food-delivery-three-alpha-47.vercel.app'], // React frontend ka port
   credentials: true
 }));
 
