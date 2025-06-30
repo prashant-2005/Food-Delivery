@@ -15,7 +15,7 @@ const port = process.env.PORT || 4000
 
 app.use(express.json())
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://food-delivery-admin-blond.vercel.app','https://food-delivery-three-alpha-47.vercel.app'], 
+  origin: ['http://localhost:5173','http://localhost:5174', 'https://food-delivery-admin-blond.vercel.app','https://food-delivery-three-alpha-47.vercel.app'], 
   credentials: true
 }));
 
