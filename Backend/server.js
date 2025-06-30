@@ -8,22 +8,22 @@ import cartRouter from "./routes/cartRoutes.js"
 import orderRouter from "./routes/orderRoutes.js"
 
 
-// app config
+
 const app = express()
 const port = process.env.PORT || 4000
 
-//middleware
+
 app.use(express.json())
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://food-delivery-admin-blond.vercel.app','https://food-delivery-three-alpha-47.vercel.app'], // React frontend ka port
+  origin: ['http://localhost:5173', 'https://food-delivery-admin-blond.vercel.app','https://food-delivery-three-alpha-47.vercel.app'], 
   credentials: true
 }));
 
 
-//db connection
+
 connectDB()
 
-//API endPoints
+
 app.use("/api/food",foodRouter)
 app.use("/images",express.static('uploads'))
 app.use("/api/user",userRouter)
