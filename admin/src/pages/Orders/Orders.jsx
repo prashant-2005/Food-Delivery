@@ -6,6 +6,8 @@ import { toast } from "react-toastify";
 import { useEffect } from 'react';
 import { assets } from "../../assets/assets";
 
+//order page
+
 const Orders = ({url}) => {
 
   const [orders, setOrders] = useState([]);
