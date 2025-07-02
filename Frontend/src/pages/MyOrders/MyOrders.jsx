@@ -3,7 +3,6 @@ import './MyOrders.css'
 import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios';
 import { assets } from '../../assets/assets';
-import axiosInstance from '../../axiosInstance';
 
 const MyOrders = () => {
 
@@ -11,7 +10,7 @@ const MyOrders = () => {
     const [data, setData] = useState([]);
 
     const fetchOrders = async () => {
-        const response = await axiosInstance.post(url + "/api/order/userorders",{} , {headers:{token}});
+        const response = await axios.post(url + "/api/order/userorders",{} , {headers:{token}});
         setData(response.data.data);
     }
 
